@@ -13,6 +13,7 @@ Shows the current location in the filesystem.
 pwd
 ```
 
+
 📌 Output example:
 
 ```
