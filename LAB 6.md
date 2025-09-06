@@ -13,8 +13,8 @@ For Example:- hello.sh
  #!/bin/bash
  echo "Hello, World!"
 ```
+![alt text](<lab 6.5.png>)
 
-![alt text](lab6.1-1.png)
 
 # 2. Variables:-
 Variables srore data (text,numbers,paths,etc).
@@ -32,12 +32,15 @@ OUTPUT:-
 ```bash
 My name Chinmay and I am 17 years old.
 ```
+![alt text](<lab 6.6.png>)
+
 ## Environment Variables:-
 ```bash
 echo $HOME  # home directory
 echo #USER  # current user
 echo $PWD   # presint working directory
 ```
+
 # 3. User input:-
 Read iput from user with ```read```.
 
@@ -47,7 +50,10 @@ echo "Enter your favourite language:"
 read lang
 echo "you choose $lang"
 ```
-# 3. Conditional Statements (If-else)
+![alt text](<lab 6.7.png>)
+
+
+# 4. Conditional Statements (If-else)
 ```bash
 #!/bin/bash
 num=10
@@ -57,6 +63,10 @@ if [ $num -gt 5]; then
 else
    echo "Number is less than or equal to 5"
 ```
+
+![alt text](<lab 6.8.png>)
+
+
 Operators:-
 . ``` -eq``` (equal)
 . ``` -ne``` (not equal)
@@ -73,6 +83,9 @@ do
     echo "number: $i"
 
 ```
+![alt text](<lab 6.9.png>)
+
+
 ## Or use a range:
 ```bash
 for i in {1..5}
@@ -80,6 +93,9 @@ do
     echo "Iteration $i"
 done
 ```
+![alt text](<lab 6.10 (2).png>)
+
+
 ## While loop:
 ```bash
 count=1
@@ -101,6 +117,9 @@ until [ $x -gt 5]
 ((x++))
 done
 ```
+![alt text](lab6.4.png)
+
+
 # 6. Functions:-
 Encapsulate reusable code.
 ```bash
@@ -115,6 +134,9 @@ Output:
 Hello, Chinmay
 Hello, World
 ```
+![alt text](<lab 6.11.png>)
+
+
 # 7. Cpmmand line arguments
 Access arguments paases to script:
 ```bash
