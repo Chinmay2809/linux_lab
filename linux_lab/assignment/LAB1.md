@@ -330,7 +330,7 @@ ls -l testfile.txt
 Example:
 
 ```bash
--rw-rw-r--1 sameerbhardwaj sameerbhardwaj 0 Aug 20 18:52 testfile.txt
+-rw-rw-r--1 newuser newgroup 0 Aug 20 18:52 testfile.txt
 ```
 ## 🔹 5. Assign ownership of the file to newuser and newgroup
 
@@ -341,4 +341,59 @@ sudo chown newuser:newgroup testfile.txt
 
 ```bash
 ls -l testfile.txt
+```
+## ✅ Key Tip: Use numeric for quick settings (e.g., 755, 644) and symbolic for fineadjustments ( u+x , g-w ).
+
+
+## 🔹 4. Putting It All Together
+
+## Example Scenario
+
+```bash
+touch project.sh
+
+ls -l project.sh
+```
+
+Output:
+
+```bash
+-rw-r--r-- 1 user 1 user2 0 Aug 19 12:00 project.sh
+```
+
+## Now:
+
+```bash
+chmod 700 project.sh # Only owner has rwx
+
+chmod u+x,g-w project.sh # Add execute for user, remove write for group
+
+chown root:admin project.sh # Change owner to root and group to admin
+```
+
+## 🔹 5. Quick Reference Table
+
+| Numeric | Symbol | Permission Meaning       |
+| ------- | ------ | ------------------------ |
+| 0       | ---    | No access                |
+| 1       | --x    | Execute only             |
+| 2       | -w-    | Write only               |
+| 3       | -wx    | Write +   execute        |
+| 4       | r--    | Read only                |
+| 5       | r-x    | Read +   execute         |
+| 6       | rw-    | Read +   write           |
+| 7       | rwx    | Full access              |
+
+## 📌 Q1 what is the difference between chmod and chown?
+
+```bash
+answer=chown-change ownership
+change the owner and group of a file or directory
+chmod-change permissions
+changes the permissions for the owner,group, and others
+```
+## 📌 Q2 how do you check current directory and user?
+
+```bash
+answer= by using the pwd command.
 ```
