@@ -1,4 +1,4 @@
-# LAB 1 :- INSTALLING VIRTUAL STUDIO CODE AND LINUX
+# LAB 0 :- INSTALLING VIRTUAL STUDIO CODE AND LINUX
 ## WHAT IS LINUX ?
 Linux is an open source operating system (OS) based on Unix. It runs on computers, servers, mobile phones and a wide range of other devices.
 
